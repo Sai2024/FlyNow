@@ -49,7 +49,8 @@
 
          <div class="overlay" data-overlay></div>
 
-         <a href="">
+         <a href="" class="header-logo">
+            <img src="./assets/images/logo.png" alt="" style="width: 50px;">
             <h1 class="logo">FlyNowOverSeas</h1>
          </a>
 
@@ -78,25 +79,12 @@
                </li>
 
                <li class="navbar-item">
-                  <a href="#projects" class="navbar-link" data-navbar-link>Projects</a>
-               </li>
-
-               <li class="navbar-item">
-                  <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
-               </li>
-
-               <li class="navbar-item">
-                  <a href="#pages" class="navbar-link" data-navbar-link>Pages</a>
-               </li>
-
-               <li class="navbar-item">
                   <a href="#contact" class="navbar-link" data-navbar-link>Contact</a>
                </li>
 
                <li class="navbar-item0">
                   <a href="#contact" class="navbar-link" data-navbar-link>
                      <div>
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
                         <span>Get a Quote</span>
                      </div>
                   </a>
@@ -108,7 +96,7 @@
 
          </nav>
 
-         <nav class="navbar">
+         <nav class="navbar pc">
             <ul class="navbar-list">
 
                <li class="navbar-item">
@@ -124,31 +112,19 @@
                </li>
 
                <li class="navbar-item">
-                  <a href="#projects" class="navbar-link" data-navbar-link>Projects</a>
-               </li>
-
-               <li class="navbar-item">
-                  <a href="#blog" class="navbar-link" data-navbar-link>Blog</a>
-               </li>
-
-               <li class="navbar-item">
-                  <a href="#pages" class="navbar-link" data-navbar-link>Pages</a>
-               </li>
-
-               <li class="navbar-item">
                   <a href="#contact" class="navbar-link" data-navbar-link>Contact</a>
                </li>
 
-               <li class="navbar-item0" id="q-btn">
-                  <a href="#contact" class="navbar-link" data-navbar-link>
-                     <div>
-                        <ion-icon name="chevron-forward-outline"></ion-icon>
-                        <span>Get a Quote</span>
-                     </div>
-                  </a>
-               </li>
+
 
             </ul>
+            <li class="navbar-item0" id="q-btn">
+               <a href="#contact" class="navbar-link" data-navbar-link>
+                  <div>
+                     <span>Get a Quote</span>
+                  </div>
+               </a>
+            </li>
          </nav>
 
 
@@ -160,6 +136,59 @@
       </div>
 
    </header>
+
+
+
+   <!-- 
+      *- Home Section
+    -->
+
+   <main>
+
+      <article>
+
+         <section id="home">
+
+            <div class="container">
+
+               <div class="home-text">
+
+                  <h1>Provide Quality Consulting Serivce</h1>
+
+                  <h4>Our company is one of the first consulting companies, professional engaged in projects.</h4>
+
+                  <div class="home-btns">
+
+                     <div class="get-started">
+                        <a href="">Get Started</a>
+                     </div>
+
+                     <div class="watch-video">
+                        <a href="">
+                           <ion-icon name="play-circle-outline"></ion-icon>
+                           <span>Watch Video</span>
+                        </a>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="home-globe" id="globeContainer">
+
+                  <canvas></canvas>
+
+               </div>
+
+            </div>
+
+         </section>
+
+      </article>
+
+   </main>
+
+
 
 
 
@@ -175,6 +204,7 @@
        - Script 
     -->
    <script src="./assets/scripts/script.js"></script>
+   <script src="./assets/scripts/globe.js" type="module"></script>
 
 </body>
 
