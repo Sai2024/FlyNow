@@ -76,8 +76,8 @@ function animate() {
 	renderer.render(scene, camera)
 	sphere.rotation.y += 0.002
 	gsap.to(group.rotation, {
-		x: -mouse.y * 0.5,
-		y: mouse.x * 0.5,
+		x: -mouse.y * 1.5,
+		y: mouse.x * 1.5,
 		duration: 2
 	})
 }
