@@ -45,11 +45,11 @@
 
    <header class="header active">
 
-      <div class="container">
+      <div class="nav-container">
 
          <div class="overlay" data-overlay></div>
 
-         <a href="" class="header-logo">
+         <a href="#home" class="header-logo">
             <img src="./assets/images/logo.png" alt="" style="width: 50px;">
             <h1 class="logo">FlyNowOverSeas</h1>
          </a>
@@ -57,7 +57,7 @@
          <nav class="navbar mob" data-navbar>
 
             <div class="navbar-top">
-               <a href="#" class="logo">FlyNowOverSeas</a>
+               <a href="#home" class="logo">FlyNowOverSeas</a>
 
                <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
                   <ion-icon name="close-outline"></ion-icon>
@@ -67,7 +67,7 @@
             <ul class="navbar-list">
 
                <li class="navbar-item">
-                  <a href="#" class="navbar-link" data-navbar-link>Home</a>
+                  <a href="#home" class="navbar-link" data-navbar-link>Home</a>
                </li>
 
                <li class="navbar-item">
@@ -100,7 +100,7 @@
             <ul class="navbar-list">
 
                <li class="navbar-item">
-                  <a href="#" class="navbar-link" data-navbar-link>Home</a>
+                  <a href="#home" class="navbar-link" data-navbar-link>Home</a>
                </li>
 
                <li class="navbar-item">
@@ -143,50 +143,113 @@
       *- Home Section
     -->
 
-   <main>
+   <section id="home">
 
-      <article>
+      <div class="container">
 
-         <section id="home">
+         <div class="home-text">
 
-            <div class="container">
+            <h1>Provide Quality Consulting Serivce</h1>
 
-               <div class="home-text">
+            <h4>Our company is one of the first consulting companies, professional engaged in projects.</h4>
 
-                  <h1>Provide Quality Consulting Serivce</h1>
+            <div class="home-btns">
 
-                  <h4>Our company is one of the first consulting companies, professional engaged in projects.</h4>
-
-                  <div class="home-btns">
-
-                     <div class="get-started">
-                        <a href="">Get Started</a>
-                     </div>
-
-                     <div class="watch-video">
-                        <a href="">
-                           <ion-icon name="play-circle-outline"></ion-icon>
-                           <span>Watch Video</span>
-                        </a>
-                     </div>
-
-                  </div>
-
+               <div class="get-started">
+                  <a href="">Get Started</a>
                </div>
 
-               <div class="home-globe" id="globeContainer">
-
-                  <canvas></canvas>
-
+               <div class="watch-video">
+                  <a href="">
+                     <ion-icon name="play-circle-outline"></ion-icon>
+                     <span>Watch Video</span>
+                  </a>
                </div>
 
             </div>
 
-         </section>
+         </div>
 
-      </article>
+         <div class="home-globe" id="globeContainer">
 
-   </main>
+            <canvas></canvas>
+
+         </div>
+
+      </div>
+
+   </section>
+
+
+   <!-- 
+      *- About Section
+    -->
+
+   <section id="about">
+
+      <div class="container">
+
+         <div class="about-heading">
+
+            <h4>About Us</h4>
+
+            <h1>Who Are We?</h1>
+
+         </div>
+
+         <div class="about-text">
+
+            <div class="about one">
+               <div class="about-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+               </div>
+               <div class="about-card_text">
+
+                  <h3>Our Mission</h3>
+
+                  <p>Our mission is to empower clients with exceptional consultancy services, enabling them to make
+                     informed decisions, overcome challenges, and achieve sustainable growth. Through personalized
+                     solutions, tailored to each client's unique needs, we ensure maximum value and long-term success.
+                  </p>
+
+               </div>
+            </div>
+            <div class="about two">
+               <div class="about-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
+               </div>
+               <div class="about-card_text">
+
+                  <h3>Result Driven Approach</h3>
+
+                  <p>We are dedicated to delivering measurable results for our clients through data-driven insights and
+                     proven methodologies. By combining analytical rigor with creative problem-solving, we provide
+                     practical and actionable recommendations. Our ultimate goal is to help you achieve your desired
+                     outcomes and drive long-term success for your organization.</p>
+
+               </div>
+            </div>
+            <div class="about three">
+               <div class="about-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+               </div>
+               <div class="about-card_text">
+
+                  <h3>Client-Centric Approach</h3>
+
+                  <p>We prioritize strong client relationships as the cornerstone of successful consultancy engagements.
+                     Our client-centric approach involves understanding your goals, challenges, and aspirations. Through
+                     close collaboration, we ensure our solutions align with your strategic vision and deliver tangible
+                     outcomes.</p>
+
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
 
 
 
