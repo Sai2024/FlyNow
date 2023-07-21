@@ -172,7 +172,7 @@ body {
 
 .container {
 	padding-inline: 15px;
-	margin: 100px 200px;
+	margin: 100px 100px;
 }
 
 
@@ -434,7 +434,6 @@ canvas {
 #testimonial .container {
 	align-items: center;
 	justify-content: center;
-	margin: 100px 200px;
 }
 
 .testimonial-heading {
@@ -456,7 +455,7 @@ canvas {
 .box {
 	min-width: 500px;
 	max-width: 500px;
-	margin: 10px;
+	margin: 30px;
 	padding: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.09), 0 6px 20px 0 rgba(0, 0, 0, 0.084);
 	border-radius: 14px;
@@ -506,14 +505,12 @@ canvas {
 #service .container {
 	align-items: center;
 	justify-content: center;
-	margin: 100px 100px;
 }
 
 .service-heading {
 	color: #000;
 	margin-top: 50px;
 	margin-bottom: 50px;
-	margin-left: 100px;
 }
 
 .service-row {
@@ -530,6 +527,7 @@ canvas {
 
 .service-card {
   	width: 100%;
+	min-width: 368px;
   	height: 100%;
   	padding: 2em 1.5em;
   	background: linear-gradient(#ffffff 50%, var(--razor-green) 50%);
@@ -554,6 +552,7 @@ canvas {
   	line-height: 1.6;
   	letter-spacing: 0.03em;
 }
+
 
 .icon-wrapper {
   	background-color: var(--razor-green);
@@ -588,8 +587,82 @@ canvas {
 
 
 
+/*---------------------------------------*\
+	# COUNTRY SECTION
+\*---------------------------------------*/
 
+#country .container {
+	margin: 100px 50px;
+	text-align: center;
+}
 
+.country-heading * {
+	color: #000;
+}
+
+.country-wrapper {
+	display: flex;
+	/* max-width: 650px; */
+	width: 100%;
+	height: 400px;
+	background: #fff;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 12px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.country-wrapper i.country-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 36px;
+	width: 36px;
+	background-color: #ffffff00;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 36px;
+	color: #343f4f;
+	font-size: 15px;
+	transition: all 0.3s linear;
+	z-index: 100;
+	cursor: pointer;
+}
+
+i.country-button:active {
+	transform: scale(0.94) translateY(-50%);
+}
+
+i#prev {
+	left: 25px;
+}
+
+i#next {
+	right: 25px;
+}
+
+.image-container {
+	height: 320px;
+	max-width: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.image-container .carousel {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	transition: all 0.4s ease;
+}
+
+.carousel img {
+	height: 100%;
+	width: 100%;
+	border-radius: 18px;
+	border: 10px solid #fff;
+	object-fit: cover;
+}
 
 
 
@@ -800,6 +873,10 @@ canvas {
 		margin: 100px 50px;
 	}
 
+	#service .container {
+		margin: 100px 50px;
+	}
+
 	.slide p {
 		padding: 0 20px;
 	}
@@ -809,6 +886,11 @@ canvas {
 	}
 
 	.wrapper {
+		position: relative;
+		left: 120px;
+	}
+
+	.service-row {
 		position: relative;
 		left: 120px;
 	}
